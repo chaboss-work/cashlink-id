@@ -1,0 +1,29 @@
+{
+  "name": "cashlink-id",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CashLink ID: bind a Nostr identity to a Bitcoin Cash wallet, verify it anywhere, and pay anyone on Nostr in BCH.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5180",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 5181",
+    "test": "tsx test/run.ts"
+  },
+  "dependencies": {
+    "@bitauth/libauth": "^3.0.0",
+    "@wizardconnect/core": "^0.2.10",
+    "@wizardconnect/dapp": "^0.2.7",
+    "nostr-tools": "^2.26.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6",
+    "@types/ws": "^8.18.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "ws": "^8.23.0"
+  }
+}
