@@ -1,0 +1,14 @@
+import { ElectrumClient } from "@electrum-cash/network";
+import { cashAddressToLockingBytecode, sha256, binToHex } from "@bitauth/libauth";
+const address = process.argv[2] ?? "bitcoincash:qrcjtu5lg8l3hgtflqjaap784eqntgdsrcup0jf9fz";
+const lock = cashAddressToLockingBytecode(address);
+if (typeof lock === "string") throw new Error(lock);
+const sh = binToHex(sha256.hash(lock.bytecode).reverse());
+const client = new ElectrumClient("cashlink-spike", "1.4.1", "bch.imaginary.cash");
+await client.connect();
+console.log("balance", JSON.stringify(await client.request("blockchain.scripthash.get_balance", sh)));
+console.log("utxos", JSON.stringify(await client.request("blockchain.scripthash.listunspent", sh)));
+const hist: any = await client.request("blockchain.scripthash.get_history", sh);
+console.log("history", JSON.stringify(hist));
+await client.disconnect();
+process.exit(0);

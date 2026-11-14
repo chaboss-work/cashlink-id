@@ -1,0 +1,23 @@
+{
+  "name": "cashlink-spike",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5174",
+    "electrum": "tsx electrum-check.ts"
+  },
+  "dependencies": {
+    "@bitauth/libauth": "^3.0.0",
+    "@electrum-cash/network": "^4.4.8",
+    "@wizardconnect/core": "^0.2.5",
+    "@wizardconnect/dapp": "^0.2.2",
+    "nostr-tools": "^2.26.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
