@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CashLink ID · Presentation</title>
+  <meta name="description" content="CashLink ID: pay anyone on Nostr in Bitcoin Cash. BCH BLAZE 2026 presentation." />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <style>:root{--ink:#fff4ec;--muted:#f3c9b4;--accent:#0ac18e;--ember:#ff7a3d;--card:#1408068c;--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark}*{box-sizing:border-box}html,body{color:var(--ink);background:#120605;margin:0;font:18px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.deck{flex-direction:column;align-items:center;gap:28px;padding:28px 16px 60px;display:flex}.slide{aspect-ratio:16/9;background:radial-gradient(120% 90% at 20% 0,#2a1410 0%,#160806 55%),linear-gradient(#1a0a07 0%,#3d0f07 100%);border-radius:14px;flex-direction:column;width:min(1100px,100%);padding:clamp(18px,4.2%,56px);display:flex;position:relative;overflow:hidden;box-shadow:0 10px 40px #00000080}.slide:after{content:"";pointer-events:none;background:linear-gradient(#0000,#be280a8c);height:38%;position:absolute;inset:auto 0 0}.slide>*{z-index:1;position:relative}.num{color:var(--muted);z-index:2;font-size:13px;position:absolute;bottom:14px;right:22px}h1{letter-spacing:-.02em;margin:0 0 12px;font-size:clamp(30px,6vw,66px);line-height:1.05}h2{margin:0 0 14px;font-size:clamp(22px,3.6vw,40px);line-height:1.1}p,li{font-size:clamp(14px,1.9vw,22px)}ul{margin:6px 0;padding-left:1.1em}li{margin:.25em 0}.accent{color:var(--accent)}.ember{color:var(--ember)}.muted{color:var(--muted)}.mono{font-family:ui-monospace,Cascadia Mono,Menlo,Consolas,monospace}a{color:#ffd9c4}.row{flex:1;align-items:center;gap:4%;min-height:0;display:flex}.col{flex:1;min-width:0}.logo{aspect-ratio:1;background:var(--accent);border-radius:22%;flex:none;place-items:center;width:30%;max-width:300px;display:grid;box-shadow:0 0 60px #0ac18e59}.logo svg{width:70%}.links{flex-wrap:wrap;gap:22px;margin-top:auto;font-size:clamp(13px,1.7vw,20px);display:flex}.links span{white-space:nowrap}.card{background:var(--card);border:1px solid #ff8c5a40;border-radius:12px;padding:14px 18px}.flow{grid-template-columns:1fr 1fr;gap:14px;margin-top:6px;display:grid}.flow .card h3{margin:0 0 6px;font-size:clamp(14px,2vw,22px)}.flow .card p{margin:0;font-size:clamp(12px,1.6vw,18px)}code{color:#9ff2d6;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85em}.big-thanks{letter-spacing:-.03em;margin:auto 0 0;font-size:clamp(48px,11vw,140px);font-weight:800}.hint{color:#b88;font-size:13px}@media print{@page{size:1600px 900px;margin:0}body{background:#120605}.deck{gap:0;padding:0}.slide{width:1600px;height:900px;box-shadow:none;break-after:page;border-radius:0;padding:64px}.hint{display:none}}</style>
+</head>
+<body>
+<main class="deck">
+
+  <section class="slide" id="s1">
+    <div class="row">
+      <div class="col">
+        <h1>CashLink ID</h1>
+        <p class="muted" style="font-size:clamp(16px,2.4vw,28px)">Pay anyone on Nostr in Bitcoin Cash</p>
+        <p>Team <b>chaboss</b> (DoraHacks: chaboss_work)</p>
+      </div>
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M27 22h-5a10 10 0 0 0 0 20h5" fill="none" stroke="#03140e" stroke-width="6" stroke-linecap="round"/><path d="M37 22h5a10 10 0 0 1 0 20h-5" fill="none" stroke="#03140e" stroke-width="6" stroke-linecap="round"/><path d="M25 32h14" stroke="#03140e" stroke-width="6" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="links">
+      <span>🔗 <a href="https://chaboss-work.github.io/cashlink-id/">chaboss-work.github.io/cashlink-id</a></span>
+      <span>⌥ <a href="https://github.com/chaboss-work/cashlink-id">github.com/chaboss-work/cashlink-id</a></span>
+      <span>🔥 BCH BLAZE 2026</span>
+    </div>
+    <div class="num">1 / 7</div>
+  </section>
+
+  <section class="slide" id="s2">
+    <h2>CashLink ID</h2>
+    <p style="font-size:clamp(20px,3.4vw,40px);font-weight:700;margin:auto 0 12px">Link your Nostr identity to your BCH wallet.<br><span class="accent">Get paid by name, not by address.</span></p>
+    <p class="muted">Both keys sign the link. Anyone verifies it in the browser. No accounts, no servers, no custody.</p>
+    <p class="mono" style="margin-top:auto"><a href="https://github.com/chaboss-work/cashlink-id">https://github.com/chaboss-work/cashlink-id</a></p>
+    <div class="num">2 / 7</div>
+  </section>
+
+  <section class="slide" id="s3">
+    <h2>The story of CashLink ID</h2>
+    <div class="row">
+      <div class="col">
+        <p>Nostr gives millions of people a portable identity, and they tip each other all day with Lightning "zaps".</p>
+        <p>Bitcoin Cash has fast, cheap, on-chain payments — but nothing tells you that <span class="mono">bitcoincash:qr…</span> really belongs to <b>@alice</b>. An address pasted into a profile proves nothing.</p>
+        <p>WizardConnect wallets can sign transactions but not messages. So we made the <b>transaction itself</b> the proof: the wallet signs a tiny commitment on chain, the Nostr key signs the matching event, and any app can check both.</p>
+      </div>
+    </div>
+    <div class="num">3 / 7</div>
+  </section>
+
+  <section class="slide" id="s4">
+    <h2>Benefits of CashLink ID</h2>
+    <ul>
+      <li><b>Pay by name:</b> npub or <span class="mono">name@domain</span> instead of copying addresses</li>
+      <li><b>Verified badge:</b> both keys signed it; checked live from relays + the blockchain</li>
+      <li><b>No middleman:</b> no accounts, no database, no custody — just Nostr relays and Fulcrum</li>
+      <li><b>Wallets people already use:</b> Selene, Paytaca, Cashonize via WizardConnect</li>
+      <li><b>Sign in with CashLink:</b> challenge–response login for any BCH app</li>
+      <li><b>Open protocol:</b> spec, reusable verifier library, NIP-78 / NIP-73 tags, DID view</li>
+    </ul>
+    <div class="num">4 / 7</div>
+  </section>
+
+  <section class="slide" id="s5">
+    <h2>BCH usage</h2>
+    <div class="flow">
+      <div class="card"><h3>⛓ Commitment transaction</h3><p>Wallet spends from the linked address with <code>OP_RETURN "CLID" 01 &lt;npub&gt; &lt;sha256(statement)&gt;</code>. SIGHASH_ALL ⇒ only the owner could sign it. ~300 sat.</p></div>
+      <div class="card"><h3>⚡ Pay by identity</h3><p>Resolve npub / NIP-05 → verify → build the payment → approve in your wallet → broadcast. Re-verified right before signing.</p></div>
+      <div class="card"><h3>🧮 BCH VM in the browser</h3><p>Verifiers evaluate the address input with libauth's BCH VM and read confirmations from any Fulcrum server.</p></div>
+      <div class="card"><h3>🔑 Zero-fee wallet proof</h3><p>For logins the wallet signs a 0-fee transaction carrying the challenge: verified, discarded, impossible to relay.</p></div>
+    </div>
+    <div class="num">5 / 7</div>
+  </section>
+
+  <section class="slide" id="s6">
+    <h2>The vision for CashLink ID</h2>
+    <ul>
+      <li>A <b>"Pay in BCH"</b> button on every verified profile in Nostr clients — BCH tips next to zaps</li>
+      <li><b>Merchant verification:</b> marketplaces show "this seller's npub owns this wallet"</li>
+      <li><b>Business:</b> paid CashLink names (<span class="mono">you@cashlink</span> NIP-05), verification API and "Sign in with CashLink" SDK for BCH apps</li>
+      <li>Next: reusable payment codes (RPA), CashTokens identity NFTs, a NIP proposal</li>
+      <li class="ember"><b>Target: every Nostr user one tap away from being paid in BCH</b></li>
+    </ul>
+    <div class="num">6 / 7</div>
+  </section>
+
+  <section class="slide" id="s7">
+    <p class="big-thanks">THANK YOU!</p>
+    <div class="links">
+      <span>Try it: <a href="https://chaboss-work.github.io/cashlink-id/">chaboss-work.github.io/cashlink-id</a></span>
+      <span>EMBER2026: <span class="mono">bitcoincash:zrcjtu5lg8l3hgtflqjaap784eqntgdsrcmtuv8rk3</span></span>
+    </div>
+    <div class="num">7 / 7</div>
+  </section>
+
+  <p class="hint">Arrow keys / PageUp / PageDown move between slides · Print to PDF gives one slide per page.</p>
+</main>
+<script>
+  const slides = [...document.querySelectorAll(".slide")];
+  let i = 0;
+  const go = (n) => { i = Math.max(0, Math.min(slides.length - 1, n)); slides[i].scrollIntoView({ behavior: "smooth", block: "center" }); };
+  addEventListener("keydown", (e) => {
+    if (["ArrowRight", "ArrowDown", "PageDown", " "].includes(e.key)) { e.preventDefault(); go(i + 1); }
+    if (["ArrowLeft", "ArrowUp", "PageUp"].includes(e.key)) { e.preventDefault(); go(i - 1); }
+  });
+</script>
+</body>
+</html>
