@@ -4,3 +4,4 @@ dist/
 # WizardConnect QR codes from the spike hold one-off session secrets
 spike/wizardconnect-qr*.png
 .env*
+.alarms/
